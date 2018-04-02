@@ -38,7 +38,7 @@ V = []
 E = []
 
 def main():
-    # Set initial position and it to vertex list
+    # Set initial position and add it to vertex list
     Qinit = [50,50]
     V.append(Qinit)
 
