@@ -7,8 +7,8 @@ The Rapidly-Exploring Random Tree (RRT) algorithm is used to quickly explore unk
 [`rrt_basic.py`](rrt_basic.py) is the most bare bones implementation of an RRT. Nodes of the tree are stored as **vertexes** and branches are stored as **edges**. If a random configuration has already been generated before, it is skipped. Once the algorithm has been run for the desired number of trials, the tree is plotted in a `matplotlib` figure. The images below show the RRT running for 50, 500, and 5000 trials, respectively.
 
 <p align = "center">
-  <img src = "img/50_trials.png" width = "300px" align = "left">
-  <img src = "img/500_trials.png" width = "300px" align = "left">
+  <img src = "img/50_trials.png" width = "300px">
+  <img src = "img/500_trials.png" width = "300px">
   <img src = "img/5000_trials.png" width = "300px">
 </p>
 
