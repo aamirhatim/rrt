@@ -61,7 +61,7 @@ def open_path(Qrand, Qnear, circles):
         if disc >= 0 and a != 0:                        # Compute solutions if the numerator isn't imaginary
             s1 = (-b + sqrt(disc))/(2*a)
             s2 = (-b - sqrt(disc))/(2*a)
-            if not (0 <= s1 <= 1) or (0 <= s2 <= 1):    # If a solution is less than 0 or larger than 1, there is an intersection
+            if (0 <= s1 <= 1 or 0 <= s2 <= 1):          # If at least one solution is between 0 and 1, there is an intersection
                 path = 0
     return path
 
