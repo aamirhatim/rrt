@@ -35,7 +35,7 @@ def generate_circles(num, mean, std):
     This function generates /num/ random circles with a radius mean defined by
     /mean/ and a standard deviation of /std/.
 
-    The circles are stored in a num x 3 SIZEd array. The first column is the
+    The circles are stored in a num x 3 sized array. The first column is the
     circle radii and the second two columns are the circle x and y locations.
     """
     circles = np.zeros((num,3))
