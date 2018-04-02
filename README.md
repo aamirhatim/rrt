@@ -9,7 +9,7 @@ The Rapidly-Exploring Random Tree (RRT) algorithm is used to quickly explore unk
 ##### Images
 <img src = "img/50_trials.png" width = "300px" align = "left">
 <img src = "img/500_trials.png" width = "300px" align = "left">
-<img src = "img/5000_trials.png" width = "300px" align = "left">
+<img src = "img/5000_trials.png" width = "300px">
 <br>
 
 ## Path Planning with Collision Objects
@@ -17,7 +17,7 @@ The Rapidly-Exploring Random Tree (RRT) algorithm is used to quickly explore unk
 
 ##### Images
 <img src = "img/path_found.png" width = "500px" align = "left">
-<img src = "img/not_found.png" width = "500px" align = "left">
+<img src = "img/not_found.png" width = "500px">
 
 Collisions were detected using vector geometry. Let's assume *p1* is the most recent known vertex and *p2* is the new randomly generated configuration. We want to know if the line segment created by these points falls within the boundaries of any of the randomly generated circles of radius *r*. If we use *t* as a simple scalar, we can represent any point on the line segment with the following equation: *px = p1 + t(p2 - p1)*. We also know that any point on this line is considered on or within the boundary of a circle if the distance between that point and the center of the circle *q* is less than or equal to *r*, giving us the equation: *|x - q| = r*. Using this information and properties of dot products, we can derive a quadratic equation that represents the intersection points of this line segment, if there are any. If a solution to this equation is between 0 and 1, there is a collision and this random configuration point is not added to the tree.
 
